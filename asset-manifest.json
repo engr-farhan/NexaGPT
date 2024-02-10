@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nexagpt/static/css/main.74a5a3d8.css",
-    "main.js": "/nexagpt/static/js/main.df6a402c.js",
-    "static/js/592.fd84c413.chunk.js": "/nexagpt/static/js/592.fd84c413.chunk.js",
-    "static/media/logo.png": "/nexagpt/static/media/logo.e14349241c5b83059ef0.png",
-    "static/media/lycheeLogo.png": "/nexagpt/static/media/lycheeLogo.6250f63bacfcf782beb3.png",
-    "static/media/facebookLogo.png": "/nexagpt/static/media/facebookLogo.f1007187cf86be668af6.png",
-    "index.html": "/nexagpt/index.html",
-    "main.74a5a3d8.css.map": "/nexagpt/static/css/main.74a5a3d8.css.map",
-    "main.df6a402c.js.map": "/nexagpt/static/js/main.df6a402c.js.map",
-    "592.fd84c413.chunk.js.map": "/nexagpt/static/js/592.fd84c413.chunk.js.map"
+    "main.css": "/NexaGPT/static/css/main.74a5a3d8.css",
+    "main.js": "/NexaGPT/static/js/main.560ffe83.js",
+    "static/js/592.fd84c413.chunk.js": "/NexaGPT/static/js/592.fd84c413.chunk.js",
+    "static/media/logo.png": "/NexaGPT/static/media/logo.e14349241c5b83059ef0.png",
+    "static/media/lycheeLogo.png": "/NexaGPT/static/media/lycheeLogo.6250f63bacfcf782beb3.png",
+    "static/media/facebookLogo.png": "/NexaGPT/static/media/facebookLogo.f1007187cf86be668af6.png",
+    "index.html": "/NexaGPT/index.html",
+    "main.74a5a3d8.css.map": "/NexaGPT/static/css/main.74a5a3d8.css.map",
+    "main.560ffe83.js.map": "/NexaGPT/static/js/main.560ffe83.js.map",
+    "592.fd84c413.chunk.js.map": "/NexaGPT/static/js/592.fd84c413.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74a5a3d8.css",
-    "static/js/main.df6a402c.js"
+    "static/js/main.560ffe83.js"
   ]
 }
