@@ -11,7 +11,7 @@ import RPG from "./Page/RPG";
 import Home from "./Page/Home/index";
 import "./normal.css";
 import "./App.css";
-import New from "./Page/New/index";
+// import New from "./Page/New/index";
 import SignUpForm from "./Component/login/LoginForm";
 import Login from "./Page/Login";
 import LoginForm from "./Component/Navbar/CustomerInfo/Login/LoginForm";
@@ -36,7 +36,7 @@ function App() {
           <Route path="/" element={<Navigate to="/nexagpt" />}></Route>
           <Route path="/home/*" element={<Home />} />
           <Route path="/nexa/*" element={<RPG />} />
-          <Route path="/new/*" element={<New />} />
+          {/* <Route path="/new/*" element={<New />} /> */}
           <Route path="/nexagpt/*" element={<ChatGPT />} />
           <Route path="/auth/signup" element={<LoginForm />} />
 
