@@ -35,7 +35,7 @@ const freeToken = "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";
     };
     const response = await post(endpoint, body);
     if (!response.ok && response.status === 401)
-      toast("Access Token is not valid!");
+      toast("you need to provide valid OpenAI access token, provided token is not valid!");
     const stream = response.body.getReader();
     const responseMessage = await readStreamPromise(stream, setChunkMessage);
     return responseMessage;

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/NexaGPT/static/css/main.74a5a3d8.css",
+    "main.js": "/NexaGPT/static/js/main.b841281a.js",
+    "static/js/592.fd84c413.chunk.js": "/NexaGPT/static/js/592.fd84c413.chunk.js",
+    "static/media/logo.png": "/NexaGPT/static/media/logo.e14349241c5b83059ef0.png",
+    "static/media/lycheeLogo.png": "/NexaGPT/static/media/lycheeLogo.6250f63bacfcf782beb3.png",
+    "static/media/facebookLogo.png": "/NexaGPT/static/media/facebookLogo.f1007187cf86be668af6.png",
+    "index.html": "/NexaGPT/index.html",
+    "main.74a5a3d8.css.map": "/NexaGPT/static/css/main.74a5a3d8.css.map",
+    "main.b841281a.js.map": "/NexaGPT/static/js/main.b841281a.js.map",
+    "592.fd84c413.chunk.js.map": "/NexaGPT/static/js/592.fd84c413.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74a5a3d8.css",
+    "static/js/main.b841281a.js"
+  ]
+}
