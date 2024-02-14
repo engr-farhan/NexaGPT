@@ -7,20 +7,12 @@ import Loading from "../../Component/Loading";
 import NavContent from "../../Component/NavContent";
 import SvgComponent from "../../Component/SvgComponent";
 
-
-import { useSelector } from "react-redux";
-import APIEndpoint from "../../HTTP_Request/APIEndpoint";
-import { toast } from "react-toastify";
-const endpoint = APIEndpoint.GPTTurbo;
-
-
 const Home = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [inputPrompt, setInputPrompt] = useState("");
   const [chatLog, setChatLog] = useState([]);
   const [err, setErr] = useState(false);
   const [responseFromAPI, setReponseFromAPI] = useState(false);
-  const accessToken = useSelector((redux) => redux.gpt.accessToken);
 
   const chatLogRef = useRef(null);
 
@@ -29,7 +21,6 @@ const Home = () => {
 
     if (!responseFromAPI) {
       if (inputPrompt.trim() !== "") {
-        // inputPrompt.model = "gpt-3.5-turbo-0301"
         // Set responseFromAPI to true before making the fetch request
         setReponseFromAPI(true);
         setChatLog([...chatLog, { chatPrompt: inputPrompt }]);
@@ -41,40 +32,17 @@ const Home = () => {
 
       async function callAPI() {
         try {
-          const response = await fetch(`${endpoint}`, {
+          const response = await fetch("https://talk-bot.onrender.com/", {
             method: "POST",
-            headers: { "Content-Type": "application/json",
-                  "Authorization":`Bearer ${accessToken}`    
-          
-                        },
-            body: JSON.stringify({
-              "model": "gpt-3.5-turbo",
-              "messages": [
-                  {
-                      "role": "user",
-                      "content": "Who won the world series in 2020?"
-                  },
-                  {
-                      "role": "user",
-                      "content": inputPrompt
-                  }
-              ],
-              "temperature": 1,
-              "top_p": 1,
-              "n": 1,
-              "stream": false,
-              "max_tokens": 250,
-              "presence_penalty": 0,
-              "frequency_penalty": 0
-            }),
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: inputPrompt }),
           });
           const data = await response.json();
           setChatLog([
             ...chatLog,
             {
               chatPrompt: inputPrompt,
-              botMessage: data.botResponse
-              // model:"gpt-3.5-turbo-0301"
+              botMessage: data.botResponse,
             },
           ]);
           setErr(false);
