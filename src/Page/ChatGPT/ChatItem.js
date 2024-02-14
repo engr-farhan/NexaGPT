@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   dracula,
-  gruvboxDark,
+  gruvboxDark
 } from "react-syntax-highlighter/dist/esm/styles/prism";
 import cumeoLogo from "../../Static/Images/Logo/logo.png";
 import twistedLogo from "../../Static/Images/Logo/logo.png";

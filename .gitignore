@@ -7,10 +7,10 @@
 /openAssistant
 # testing
 /coverage
-
+src/firebase.config.js
 # production
 /build
-
+src
 # misc
 .DS_Store
 .env.local

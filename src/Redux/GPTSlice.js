@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const savedToken = localStorage.getItem("accessToken");
+
 const InitialState = {
-  accessToken: "mfarhan",
+  accessToken: savedToken,
   showAvatar: true,
 };
 
