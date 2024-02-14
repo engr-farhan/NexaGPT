@@ -40,7 +40,7 @@ const SpeakSetting = () => {
             onClick={() => speaker.speak(testContent)}
             color="warning"
           >
-            Test the Speak
+            Speaker Test Button
           </Button>
         </>
       )}

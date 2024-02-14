@@ -17,27 +17,27 @@ import Home from "./Page/Home";
 // import LoginForm from "./Component/Navbar/CustomerInfo/Login/LoginForm";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useContext } from "react";
-// import { AuthContext } from "./Context/AuthContext";
+import { AuthContext } from "./Context/AuthContext";
 
 function App() {
-  // const { currentUser } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
-  // const RequireAuth = ({ children }) => {
-  //   return currentUser ? children : <Navigate to="auth/login" />;
-  // };
+  const RequireAuth = ({ children }) => {
+    return currentUser ? children : <Navigate to="auth/login" />;
+  };
 
   return (
     <ThemeProvider theme={ConfiguredTheme}>
       <Layout>
-      <div className="App">
         <Routes>
           <Route path="/" element={<Navigate to="/nexagpt" />}></Route>
           <Route path="/home/*" element={<Home />} />
           <Route path="/nexa/*" element={<RPG />} />
           <Route path="/nexagpt/*" element={<ChatGPT />} />
+          <Route path="/auth/login" element={<ChatGPT />} />
+
 
       </Routes>
-      </div>
       </Layout>
       <ToastContainer
         position="bottom-left"

@@ -19,7 +19,7 @@ function ShowAvatar() {
         name="showAvatar"
         color="primary"
       />
-      <Typography textAlign="center">Show profile image on card </Typography>
+      <Typography textAlign="center">Bot & User profile images </Typography>
     </Box>
   );
 }

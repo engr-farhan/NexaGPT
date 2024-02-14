@@ -7,20 +7,20 @@ import { toast } from "react-toastify";
 const useHTTPGPT = () => {
   const endpoint = APIEndpoint.GPTTurbo;
   const accessToken = useSelector((redux) => redux.gpt.accessToken);
-  // const freeToken = process.env.REACT_APP_GPT_TOKENS.split(",") || [""];
-const freeToken = "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";
+//  const freeToken = process.env.REACT_APP_GPT_TOKENS.split(",") || [""];
+// const freeToken = process.env.REACT_APP_GPT_TOKENS;
+// const apiKey = process.env.REACT_APP_GPT_TOKENS;
+
   const model = "gpt-3.5-turbo-0301";
-  function getRandomToken(array) {
-    const index = Math.floor(Math.random() * array.length);
-    return array[index];
-  }
+  // function getRandomToken(array) {
+  //   const index = Math.floor(Math.random() * array.length);
+  //   return array[index];
+  // }
 
   const headers = {
     "Content-Type": "application/json",
-    Authorization: "Bearer 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"
-    // Authorization: `Bearer ${
-    //   accessToken !== "thangchiba" ? accessToken : getRandomToken(freeToken)
-    // }`,
+    "Authorization": `Bearer  ${accessToken}` 
+ 
   };
 
   const { post, loading, error } = useHTTP({ headers });

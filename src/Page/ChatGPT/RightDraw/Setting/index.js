@@ -6,7 +6,7 @@ import CommonModal from "../../../../Component/UIComponent/Common/CommonModal";
 import SetupToken from "./SetupToken";
 import ShowAvatar from "./ShowAvatar";
 import SpeakSetting from "./Speaker/SpeakSetting";
-import YoutubeTutorial from "./YoutubeTutorial";
+// import YoutubeTutorial from "./YoutubeTutorial";
 const Setting = () => {
   const [open, setOpen] = useState(false);
   const [youtube, setYoutube] = useState(true);
@@ -15,7 +15,7 @@ const Setting = () => {
     setOpen(true);
   }
   function handleCloseNewUpdate() {
-    // setOpen(true);
+    setOpen(true);
   }
   return (
     <>
@@ -26,6 +26,7 @@ const Setting = () => {
         <ShowAvatar />
         <SetupToken />
         <SpeakSetting />
+        {/* <YoutubeTutorial /> */}
       </Stack>
     </>
   );

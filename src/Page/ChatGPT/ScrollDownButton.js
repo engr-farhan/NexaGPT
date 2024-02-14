@@ -2,7 +2,7 @@ import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrow
 import { Fab } from "@mui/material";
 import { useEffect, useState } from "react";
 const ScrollDownButton = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [ setScrollPosition] = useState(0);
   const element = document.getElementById("chatboard");
 
   useEffect(() => {

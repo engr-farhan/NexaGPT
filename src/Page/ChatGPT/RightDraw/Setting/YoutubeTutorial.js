@@ -24,7 +24,7 @@ const YoutubeTutorial = (props) => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/3vzaH0vUWC8"
+          src="https://go.aws/3w7jICQ"
           title="GPT tutorial"
           // frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
